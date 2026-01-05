@@ -4,10 +4,9 @@
 
 - **Git Merge Helper**: Located in `.claude/skills/git-merge-helper`.
   - Use this skill for ALL git merge operations.
-  - Do NOT use native `git merge` commands directly.
-  - Triggers: "merge to", "合并 to", "合并到", "/mh".
+  - Do NOT use native git commands directly.
 
-## Guidelines
+## Commands
 
-When the user asks to merge branches, ALWAYS invoke the `git-merge-helper` skill.
-
+- **merge**: `python3 .claude/skills/git-merge-helper/scripts/merge_executor.py` - Safely merges current branch to target (default: main).
+- **mh**: `python3 .claude/skills/git-merge-helper/scripts/merge_executor.py` - Alias for merge.
