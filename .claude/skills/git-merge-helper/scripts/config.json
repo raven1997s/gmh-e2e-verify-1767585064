@@ -1,0 +1,17 @@
+{
+  "max_retries": 3,
+  "retry_delay": 2,
+  "network_timeout": 30,
+  "max_week_logs": 10,
+  "max_month_logs": 5,
+  "week_days": 7,
+  "month_days": 30,
+  "protected_branches": [
+    "pre",
+    "prod",
+    "production",
+    "master-prod",
+    "pre-prod"
+  ],
+  "max_conflict_file_size": 10485760
+}
